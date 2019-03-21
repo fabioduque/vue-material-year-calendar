@@ -5,6 +5,7 @@
     <select v-model="lang">
       <option value="tw">繁體中文</option>
       <option value="en">English</option>
+      <option value="pt">Português</option>
     </select>
 
     <select v-model="defaultClassName">
@@ -39,7 +40,7 @@ export default {
   },
   data () {
     return {
-      lang: 'en', // 'en' or 'tw'
+      lang: 'en', // 'en', 'tw', 'pt'
       year: 2019,
       activeDates: [{ date: '2019-03-13', className: 'red' }, { date: '2019-03-14', className: 'blue' }],
       // activeDates: ['2019-03-12', '2019-03-16'],
